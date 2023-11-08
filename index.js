@@ -1,4 +1,4 @@
-import andpack from './src';
+import andpack from './dist/andpack';
 
 const {
   fun
@@ -6,4 +6,5 @@ const {
 
 export {
   fun as default,
+  fun,
 }
