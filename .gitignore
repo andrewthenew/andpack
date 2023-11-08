@@ -1,0 +1,40 @@
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+*bower_components*
+
+# testing
+/coverage
+
+# production
+dist
+/dist
+/build
+*build
+*build_prod
+
+# misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log*
+
+.idea/
+*.idea*
+*node_modules*
+*sass-cache*
+*main.js*
+*chunk.js*
