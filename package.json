@@ -7,10 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "rm -rf ./dist && npm run build"
   },
-  "peerDependencies": {
-    "react": ">=18.2.0",
-    "react-dom": ">=18.2.0"
-  },
   "devDependencies": {
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.7.6",
@@ -20,6 +16,10 @@
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
     "url-loader": "^4.1.1"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
   },
   "author": "",
   "license": "ISC",
