@@ -31,9 +31,6 @@ module.exports = {
   mode: process.env.NODE_ENV,
 
   output: {
-    // path: path.resolve(__dirname, 'public/build'),
-    // filename: '[name].js',
-
     path: path.join(__dirname, './dist'),
     filename: 'andpack.js',
     library: 'andpack',
@@ -71,16 +68,6 @@ module.exports = {
 
   module: {
     rules: [
-      // {
-      //   test: /\.js$/,
-      //   enforce: 'pre',
-      //   use: ['source-map-loader'],
-      // },
-      // {
-      //   test: /\.tsx?|.jsx?$/,
-      //   use: 'babel-loader',
-      //   exclude: /node_modules/,
-      // },
       {
         test: /\.(js|jsx)$/,
         use: ['babel-loader'],
@@ -95,14 +82,6 @@ module.exports = {
         test: /\.(pdf|doc|zip)$/,
         use: ['file-loader'],
       },
-      // {
-      //   test: /\.s?css$/,
-      //   use: [
-      //     'style-loader',
-      //     'css-loader',
-      //     'sass-loader',
-      //   ],
-      // },
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
@@ -141,7 +120,6 @@ module.exports = {
     fs: 'es2015 fs',
     path: 'es2015 path',
 
-    // Don't bundle react or react-dom
     react: {
       commonjs: 'react',
       commonjs2: 'react',
