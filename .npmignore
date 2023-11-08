@@ -5,3 +5,4 @@ webpack.production.config.js
 .gitignore
 .idea
 env-config
+src
