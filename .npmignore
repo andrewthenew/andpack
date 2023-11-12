@@ -2,6 +2,8 @@ webpack.config.js
 webpack.local.config.js
 webpack.production.config.js
 .eslintrc
+.eslintrc*
+.babelrc
 .gitignore
 .idea
 env-config

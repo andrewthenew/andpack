@@ -1,0 +1,52 @@
+.delimiter {
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+  
+  // horizontal
+  &.h {
+    width: 100%;
+    height: 1px;
+    margin: 8px 0; // default widthType
+    
+    // heightType
+    &.micro {
+      margin: 2px 0;
+    }
+    &.tiny {
+      margin: 4px 0;
+    }
+    &.tall {
+      margin: 12px 0;
+    }
+    &.tall2 {
+      margin: 16px 0;
+    }
+    &.tall3 {
+      margin: 26px 0;
+    }
+  }
+  
+  &.visible {
+    background-color: rgba(111, 127, 143, 1);
+  }
+  // vertical
+  &.v {
+    width: 1px;
+    height: 100%;
+    margin: 0 8px; // default widthType
+    
+    opacity: 0.15;
+    
+    // widthType
+    &.micro {
+      margin: 0 2px;
+    }
+    &.tiny {
+      margin: 0 4px;
+    }
+    &.wide {
+      margin: 0 15px;
+    }
+  }
+}
